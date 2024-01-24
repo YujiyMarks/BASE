@@ -54,6 +54,7 @@ g = 2 + (3*5)
 print(a,b,c,d,e,f,g)
 '''
 
+
 ''' # Estruturas de CONDIÇÂO
 S = [3,3,2]
 
@@ -112,6 +113,9 @@ x = 3
 def Soma(a,b): # definição de função [ def 'nome'('váriaveis'): ]
     return a+b # valor a ser retornado [ return 'valor' ]
 
+def somar2(a):
+    return a + 2
+
 def Nada(x):
     x = 2
     y = x
@@ -131,11 +135,14 @@ U = [-1,0,2,5]
 F = Soma(2,x)
 print(F)
 
+K = map(somar2,U) # aplica uma função para uma lista de dados [ map('função','lista') ]
+print(list(K)) # transforma sequência iteraveis em lista [ 'list(sequência') ]
+
 N = Nada(x)
 print(N)
 
-M = filter(maior,U) # ?
-print(M)
+M = filter(maior,U) # filtra os valores que satisfazem a condição de uma função [ filter('função','valores') ]
+print(list(M)) 
 '''
 
 
@@ -150,10 +157,13 @@ Tit = Te.title() # deixa a letra inicial das palavras em maiusculo [ 'string'.ti
 
 print(Te,t,T,Tit)
 
+print(len(A)) # quantidade de letras de uma string [ len('string') ]
+print(len('oioi'))
+
 print(A[1]) # escolhe o elemento de uma posição da string [ 'string'['posição'] ]
 
 if B > A or A == B: # comparação de strings
-    print(A+B) # concatenação de string ['string'+'string']
+    print(A+B) # concatenação de string [ 'string'+'string' ]
     
 print(B.find('i')) # mostra a posição que uma primeira letra está em uma string [ 'string'.find('letra') 
 print(B.replace('i','e')) # troca uma string pela outra [ 'string'.replace('string inicial','string trocada') ]
@@ -162,12 +172,13 @@ print(B.rstrip()) # remove os caracteres brancos do inicio e fim [ 'string'.stri
 print(B.lstrip()) # remove os caracteres brancos do inicio [ 'string'.lstrip() ]
 print(B.strip()) # remove os caracteres brancos do fim [ 'string'.rstrip() ]
 print(B.split()) # divide a string em palavras [ 'string'.split() ]
-print(B.split('i')) # divide a string de acordo com o separado [ 'string'.split('separador') ]
+print(B.split('i')) # divide a string de acordo com o separador [ 'string'.split('separador') ]
 print(B.index('i')) # mostrado o indice da letra [ 'string'.index('letra') ]
 
 print(A*2) # escreve a string multiplas vezes [ print('string'*'vezes') ]
 print(B[2:5]) # escreve um subconjunto de uma string [ print('string[posicao inicial: posicao final+1]') ]
 '''
+
 
 ''' # Listas
 V = ['a',a,'2',5,2,"3"]
@@ -178,8 +189,6 @@ print(G)
 
 # contagem de lista
 print(len(V)) # quantidade de elementos de uma lista [ len('lista') ]
-print(len(A)) # quantidade de letras de uma string [ len('string') ]
-print(len('oioi'))
 
 # adição de elementos
 V.append('hau') # adiciona um elemento ao final da lista [ 'lista'.append('elemento') ]
@@ -192,7 +201,7 @@ print(V)
 # remoção de elementos
 V.remove(2) # remove um elemento numa posicao da lista [ 'lista'.remove('posicao') ]
 print(V)
-V.remove('hau')
+V.remove('hau') # remove um elemento especifico de uma lista [ 'lista'.remove('elemento') ]
 print(V)
 del V[2] # outra forma de remover um elemento de uma posicao da lista[ del 'lista'['posicao'] ]
 print(V)
@@ -214,7 +223,10 @@ V = ['a',a,'2',5,2,"3"] # é uma lista com ordenação
 print(V)
 print(V[0]) # mostrar um elemento especifico de um vetor [ 'vetor'['posicao'] ]
 print(V[-1]) # utilizar números negativos faz a contagem a partir do final
+'''
 
+
+''' # Matrizes
 M = [[a,b,c],[1,2,3]] # criação de matriz [ listas dentro de uma lista ]
 print(M)
 print(M[0][1])
@@ -263,4 +275,5 @@ L = range(3,9,2) # crição de P.A. [ range(valor inicial, valor final, razão) 
 
 for t in zip(L, V): # retorna uma lista conjunta para cada uma das posições dadas [ zip('listas') ]
     print(t)
+
 '''
