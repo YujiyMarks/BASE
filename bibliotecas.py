@@ -36,7 +36,7 @@ total['Faturamento'] = total['Quantidade Vendida'] * total['Preco Unitario']
 
 print(produtos)
 
-display(total['Primeiro Nome'].unique()) # análisa todos valores únicos de uma coluna [ 'tabela'['coluna'].unique() ]
+display(total['Primeiro Nome'].unique()) # analisa todos valores únicos de uma coluna [ 'tabela'['coluna'].unique() ]
 
 print(total['Primeiro Nome'].nunique()) # conta quantos valores únicos há em uma coluna [ 'tabela'['coluna'].nunique() ]
 
@@ -56,12 +56,12 @@ dic = {'iPhone':1, 'Televisão':2, 'Notebook':3, 'Android':4, 'SmartWatch':5, 'T
 total['Produto'].map(dic) 
 # troca os valores de uma coluna de acordo com um dicionário [ 'tabela'['coluna'].map('dicionario') ]
 
-def divide(x):
-    return x/2
-
 table = pd.DataFrame({'Idade':[2,3,5],'Sexo':["M","F","F"]}) 
 # criação de uma tabela manualmente [ pd.DataFrame({'coluna1':[valores]}) ]
 display(table)
+
+def divide(x):
+    return x/2
 
 table['Idade'].apply(divide) # aplica uma função a coluna de uma tabela [ 'tabela'['coluna'].apply('funcao') ]
 '''
@@ -104,7 +104,7 @@ print(np.concatenate((A,B)))
 
 print(M[M<3]) # selecionando dados de um array por uma condição [ 'array'['array''condição'] ]
 
-print(M.sum()) # soma dos os dados de um array [ 'array'.sum() ]
+print(M.sum()) # soma os dados de um array [ 'array'.sum() ]
 print(M.min()) # menor valor de um array [ 'array'.min() ]
 print(M.max()) # maior valor de um array [ 'array'.max() ]
 print(M.mean()) # média dos valores de um array [ 'array'.mean() ]
