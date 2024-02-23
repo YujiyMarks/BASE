@@ -9,7 +9,7 @@ import this
 
 
 ''' # Variaveis
-a = 5 # declaração de váriavel ['nome' = 'valor']
+a = 7 # declaração de váriavel ['nome' = 'valor']
 L = ['a',a,2,'2',"3"] # criação de uma váriavel como lista 
 ti = 'Ola' # criação de váriavel como string 
 
