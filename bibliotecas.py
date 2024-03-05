@@ -102,6 +102,10 @@ C = np.concatenate((A,[15,25,35])) # juntar arrays de mesma dimensão [ np.conca
 print(C)
 print(np.concatenate((A,B)))
 
+lista_ufvs = np.array([])
+ufv = 1
+lista_ufvs = np.append(lista_ufvs,ufv) # adiciona o valor de uma váriavel a um array [ np.append('array','variável')]
+
 print(M[M<3]) # selecionando dados de um array por uma condição [ 'array'['array''condição'] ]
 
 print(M.sum()) # soma os dados de um array [ 'array'.sum() ]
