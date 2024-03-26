@@ -1,4 +1,4 @@
-''' # Bibliotecas
+''' # BIBLIOTECAS
 import os # importação de biblioteca [ import 'biblioteca' ]
 import pandas as pd # importar uma biblioteca com apelido [ import 'biblioteca' as 'apelido' ]
 import plotly.express as px
