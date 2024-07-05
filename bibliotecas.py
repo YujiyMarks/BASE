@@ -3,6 +3,7 @@ import os # importação de biblioteca [ import 'biblioteca' ]
 import pandas as pd # importar uma biblioteca com apelido [ import 'biblioteca' as 'apelido' ]
 import plotly.express as px
 import numpy as np
+import matplotlib.pyplot as np
 from numpy.random import default_rng # importar uma função de uma biblioteca [ from 'biblioteca' import 'função' ]
 import this
 '''
@@ -79,10 +80,14 @@ A = np.array([1,2,3,4,5]) # criação de um array [ 'nome' = np.array(['valores'
 print(A)
 M = np.array([[1,2,3],[1,2,3]])
 print(M)
+B = 2*A # multiplica todos elementos de A por 2
+E = A+B # soma cada elementos de uma matriz com o da outra
+C = A*B # multiplica cada elemento de uma matriz pelo da outra
+D = np.matmul(B,C) # multiplicação de matrizes
 
 Z = np.zeros(shape = (2,4,3)) # cria uma matriz de zeros [ np.zeros(shape = ('quantidade','linhas','colunas')) ]
 print(Z)
-
+I = np.identity(2) # cria a matriz identidade
 Um = np.ones(shape = (2,3,4)) # cria uma matriz de uns [ np.ones(shape = ('quantidade','linhas','colunas')) ]
 print(Um)
 
@@ -109,12 +114,26 @@ lista_ufvs = np.append(lista_ufvs,ufv) # adiciona o valor de uma váriavel a um 
 print(M[M<3]) # selecionando dados de um array por uma condição [ 'array'['array''condição'] ]
 
 print(M.sum()) # soma os dados de um array [ 'array'.sum() ]
+print(np.sum(M, axis=0)) # soma os dados das colunas um array [ 'array'.sum() ]
+print(np.sum(M, axis=1)) # soma os dados das linhas de um array [ 'array'.sum() ]
+
 print(M.min()) # menor valor de um array [ 'array'.min() ]
 print(M.max()) # maior valor de um array [ 'array'.max() ]
+print(M.argmax()) # indice do maior valor de um array [ 'array'.max() ]
 print(M.mean()) # média dos valores de um array [ 'array'.mean() ]
 
 rng = default_rng() # dando apelido para uma função [ 'apelido' = 'função'() ]
 
 print(rng.integers(15, size=(2,3)))  
 # criação de um array com valores aleatórios [ rng.integers('conjunto de números'),size=('linhas','colunas') ]
+
+
+# PLT
+
+plt.plot(x,y,'cor')
+plt.xlabel('Titulo do eixo x')
+plt.ylabel('Titulo do eixo y')
+plt.title('Titulo do gráfico')
+plt.imshow
+plt.show()
 '''
